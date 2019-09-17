@@ -3,8 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import SignUpForm from './components/SignUpForm';
 import SignInForm from './components/SignInForm';
 import firebase from 'firebase';
+import { config } from 'config'
 
 export default function App() {
+
   const config = {
     apiKey: "AIzaSyB0s3CTsjZIcVYpGlqQQwP-wnUIk3OLGZc",
     authDomain: "one-time-password-79d69.firebaseapp.com",
@@ -14,6 +16,7 @@ export default function App() {
     messagingSenderId: "119216833222",
     appId: "1:119216833222:web:44eca13b868203c9484dc7"
   };
+
   firebase.initializeApp(config);
 
   return (
